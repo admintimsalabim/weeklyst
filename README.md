@@ -1,5 +1,5 @@
 # weeklyst
-A free to use webapp family planner for meals, groceries and also contains an option to add loyalty cards.
+A free to use webapp family planner for meals, groceries and also contains an option to add loyalty cards. I hope that other people can use this for their own. If you have any issues, please leave a message. 
 
 # Weeklyst — Installation & User Guide
 
