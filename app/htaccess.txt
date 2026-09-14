@@ -1,0 +1,25 @@
+# Weeklyst — .htaccess
+
+# Disable directory listing
+Options -Indexes
+
+# Force HTTPS
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# www forward to clean domein (optioneel)
+# RewriteCond %{HTTP_HOST} ^www\.jouwdomein\.nl$ [NC]
+# RewriteRule ^ https://jouwdomein.nl%{REQUEST_URI} [L,R=301]
+
+# Block access to sensitive files
+<FilesMatch "^(config|db|mailer|csrf|push)\.php$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# Allow api.php, admin_api.php and invite.php files
+<FilesMatch "^(api|admin_api|invite|sw)\.php$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>

@@ -1,0 +1,1125 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+<meta name="robots" content="index, follow">
+<meta name="description" content="Weeklyst — de simpele gezinsplanner voor maaltijden en boodschappen. Geen reclame, geen tracking.">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Weeklyst">
+<meta name="theme-color" content="#2b6cb0">
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
+<title>Weeklyst — Gezinsplanner</title>
+<script src="lang.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg:      #dde8f4;
+  --surface: #eef3fa;
+  --border:  #b8ccdf;
+  --text:    #1a2433;
+  --muted:   #4a6480;
+  --faint:   #8aabca;
+  --accent:  #2b6cb0;
+  --accent2: #1a4a7a;
+  --danger:  #c0392b;
+  --warn:    #d97706;
+  --success: #2f855a;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+body { font-family: 'DM Sans', sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; font-size: 15px; }
+
+/* ── Layout ── */
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1.25rem;
+  padding-top: max(2rem, calc(1rem + env(safe-area-inset-top, 0px)));
+  padding-bottom: max(2rem, calc(1rem + env(safe-area-inset-bottom, 0px)));
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 2rem 1.75rem;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 4px 24px rgba(43,108,176,0.08);
+}
+
+/* ── Logo ── */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 1.75rem;
+}
+.logo-icon {
+  width: 40px; height: 40px;
+  background: var(--accent);
+  border-radius: 10px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 20px;
+}
+.logo-name {
+  font-family: 'Lora', serif;
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+/* ── Koppen ── */
+.card-title {
+  font-family: 'Lora', serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--text);
+  margin-bottom: 6px;
+}
+.card-sub {
+  font-size: 13px;
+  color: var(--muted);
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+/* ── Formuliervelden ── */
+.field { margin-bottom: 1rem; }
+.f-label {
+  display: block;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 5px;
+}
+.f-input {
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 9px;
+  padding: 11px 13px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 15px;
+  color: var(--text);
+  background: var(--bg);
+  outline: none;
+  transition: border-color .15s, box-shadow .15s;
+}
+.f-input:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(43,108,176,0.12);
+}
+.f-input.error { border-color: var(--danger); }
+.f-input::placeholder { color: var(--faint); }
+
+/* Code invoer — grote cijfers */
+.code-input {
+  font-size: 28px;
+  font-weight: 500;
+  letter-spacing: 10px;
+  text-align: center;
+  font-family: 'DM Sans', sans-serif;
+}
+
+/* ── Knoppen ── */
+.btn {
+  width: 100%;
+  border: none;
+  border-radius: 9px;
+  padding: 12px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: opacity .15s, transform .1s;
+  margin-top: .25rem;
+}
+.btn:active { transform: scale(.98); }
+.btn:disabled { opacity: .5; cursor: not-allowed; }
+.btn-primary { background: var(--accent); color: #fff; }
+.btn-primary:hover { opacity: .9; }
+.btn-secondary {
+  background: transparent;
+  color: var(--accent);
+  border: 1px solid var(--border);
+  margin-top: .5rem;
+}
+.btn-secondary:hover { background: var(--bg); }
+
+/* ── Feedback ── */
+.msg {
+  font-size: 13px;
+  padding: 10px 13px;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+  display: none;
+}
+.msg.show { display: block; }
+.msg.error   { background: #fef2f2; color: var(--danger); border: 1px solid #fca5a5; }
+.msg.success { background: #f0fdf4; color: var(--success); border: 1px solid #86efac; }
+.msg.info    { background: #eff6ff; color: var(--accent);  border: 1px solid #93c5fd; }
+
+/* ── Links ── */
+.link-row {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 13px;
+  color: var(--muted);
+}
+.link-row a, .link-row button {
+  color: var(--accent);
+  font-weight: 500;
+  text-decoration: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 13px;
+  font-family: 'DM Sans', sans-serif;
+  padding: 0;
+}
+.link-row a:hover, .link-row button:hover { text-decoration: underline; }
+
+/* ── Divider ── */
+.divider {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 1.25rem 0;
+  color: var(--faint);
+  font-size: 12px;
+}
+.divider::before, .divider::after {
+  content: '';
+  flex: 1;
+  border-top: 1px solid var(--border);
+}
+
+/* ── Invite code display ── */
+.invite-box {
+  background: var(--bg);
+  border: 2px dashed var(--border);
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  margin: 1rem 0;
+}
+.invite-code {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 8px;
+  color: var(--accent);
+  font-family: 'DM Sans', sans-serif;
+}
+.invite-sub {
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 4px;
+}
+
+/* ── Wachtwoord sterkte ── */
+.pw-strength { height: 4px; border-radius: 2px; margin-top: 6px; transition: width .3s, background .3s; width: 0; }
+
+/* ── Stap indicator ── */
+.steps {
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+.step-dot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: var(--border);
+  transition: background .2s;
+}
+.step-dot.active { background: var(--accent); }
+.step-dot.done   { background: var(--success); }
+
+/* ── Laadspinner ── */
+.spinner {
+  display: inline-block;
+  width: 16px; height: 16px;
+  border: 2px solid rgba(255,255,255,.4);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: spin .6s linear infinite;
+  margin-right: 6px;
+  vertical-align: middle;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* ── Landingspagina ── */
+.hero { text-align: center; margin-bottom: 2rem; }
+.hero-title {
+  font-family: 'Lora', serif;
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 8px;
+}
+.hero-sub { font-size: 15px; color: var(--muted); line-height: 1.6; }
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 1.5rem 0;
+}
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  color: var(--muted);
+}
+.feature-icon {
+  width: 28px; height: 28px;
+  background: var(--bg);
+  border-radius: 8px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 14px;
+  flex-shrink: 0;
+}
+.donate-link {
+  text-align: center;
+  margin-top: 1.25rem;
+  font-size: 12px;
+  color: var(--faint);
+}
+.donate-link a { color: var(--muted); text-decoration: none; }
+.donate-link a:hover { color: var(--accent); }
+
+/* ── Install hint ── */
+.install-hint {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 10px 14px;
+  margin-top: .75rem;
+  cursor: pointer;
+  font-size: 13px;
+  color: var(--muted);
+  transition: background .15s;
+}
+.install-hint:hover { background: #d0dff0; }
+.install-hint-icon { font-size: 16px; flex-shrink: 0; }
+
+/* ── Landing footer ── */
+.landing-footer { display:flex; align-items:center; justify-content:center; gap:8px; margin-top:1rem; font-size:12px; color:var(--faint); }
+.footer-link { background:none; border:none; cursor:pointer; font-size:12px; color:var(--muted); font-family:"DM Sans",sans-serif; padding:0; }
+.footer-link:hover { color:var(--accent); }
+.footer-sep { color:var(--border); }
+.footer-built { color:var(--faint); }
+.footer-built a { color:var(--muted); text-decoration:none; }
+.footer-built a:hover { color:var(--accent); }
+
+/* ── Over pagina ── */
+.about-card { max-width:440px; }
+.about-section { margin-bottom:1.25rem; }
+.about-title { font-family:"Lora",serif; font-size:19px; font-weight:500; color:var(--text); margin-bottom:.6rem; }
+.about-subtitle { font-size:14px; font-weight:500; color:var(--text); margin-bottom:.4rem; }
+.about-text { font-size:13px; color:var(--muted); line-height:1.65; }
+.about-link { color:var(--accent); text-decoration:none; font-weight:500; }
+.about-link:hover { text-decoration:underline; }
+.about-donate { background:var(--bg); border-radius:10px; padding:1rem; }
+.about-version { text-align:center; font-size:11px; color:var(--faint); margin-top:1.25rem; }
+
+/* ── Auth methode keuze ── */
+.auth-choice { margin: .75rem 0 1rem; }
+.choice-label { font-size: 11px; font-weight: 500; letter-spacing: .07em; text-transform: uppercase; color: var(--muted); margin-bottom: 8px; }
+.choice-options { display: flex; flex-direction: column; gap: 8px; }
+.choice-opt { display: flex; align-items: flex-start; gap: 10px; padding: 10px 12px; border: 1px solid var(--border); border-radius: 9px; cursor: pointer; transition: border-color .15s, background .15s; }
+.choice-opt:has(input:checked) { border-color: var(--accent); background: rgba(43,108,176,.05); }
+.choice-opt input[type=radio] { margin-top: 3px; accent-color: var(--accent); flex-shrink: 0; }
+.choice-opt span { font-size: 14px; line-height: 1.4; }
+.choice-opt small { font-size: 12px; color: var(--muted); }
+
+/* ── Magic login scherm ── */
+
+.logo-icon { background: none !important; padding: 0 !important; overflow: hidden; }
+.app-icon { width: 40px; height: 40px; border-radius: 10px; object-fit: cover; display: block; }
+.lang-toggle { position:fixed; top:max(10px,calc(6px + env(safe-area-inset-top,0px))); right:max(10px,calc(6px + env(safe-area-inset-right,0px))); z-index:999; background:var(--surface); border:1px solid var(--border); border-radius:20px; padding:5px 12px; font-size:12px; font-weight:500; color:var(--muted); cursor:pointer; font-family:'Outfit',sans-serif; box-shadow:0 2px 8px rgba(0,0,0,.08); transition:background .15s,color .15s; }
+.lang-toggle:hover { background:var(--accent); color:#fff; border-color:var(--accent); }
+</style>
+<script>
+// Icon direct beschikbaar voor alle schermen
+initLang();
+window.APP_ICON = 'data:image/png;base64,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';
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.app-icon').forEach(function(img) { img.src = window.APP_ICON; });
+});
+</script>
+</head>
+<body>
+
+<!-- ── SCHERMEN (één tegelijk zichtbaar) ── -->
+
+<!-- 0. Landing -->
+<button class="lang-toggle" onclick="toggleLang()">EN</button>
+
+<div class="page" id="screen-landing">
+  <div class="card">
+    <div class="logo">
+      <div class="logo-icon"><img class="app-icon" src="" style="width:40px;height:40px;border-radius:10px;object-fit:cover;display:block"></div>
+      <div class="logo-name">Weeklyst</div>
+    </div>
+    <div class="hero">
+      <div class="hero-title" data-i18n="landing_tagline">Slim boodschappen doen met je gezin</div>
+      <div class="hero-sub" data-i18n="landing_sub">De simpele planner voor maaltijden en boodschappen. Gedeeld met je gezin, altijd up-to-date.</div>
+    </div>
+    <div class="features">
+      <div class="feature"><div class="feature-icon">&#128717;</div> <span data-i18n="landing_f1">Gedeelde boodschappenlijst</span></div>
+      <div class="feature"><div class="feature-icon">&#127869;</div> <span data-i18n="landing_f2">Weekmenu plannen</span></div>
+      <div class="feature"><div class="feature-icon">&#128161;</div> <span data-i18n="landing_f3">Ideeën voor avondeten</span></div>
+      <div class="feature"><div class="feature-icon">&#128274;</div> <span data-i18n="landing_f4">Geen reclame, geen tracking</span></div>
+    </div>
+    <button class="btn btn-primary" onclick="show('screen-register')" data-i18n="landing_register">Maak gratis account aan</button>
+    <button class="btn btn-secondary" onclick="show('screen-join')" data-i18n="landing_join">🔑 Meedoen met uitnodigingscode</button>
+    <div class="install-hint" onclick="window.location.href='install.html'">
+      <span class="install-hint-icon">&#10067;</span>
+      <span data-i18n="landing_install_hint">Hoe zet ik Weeklyst op mijn beginscherm?</span>
+      <span style="margin-left:auto;color:var(--faint)">&#8250;</span>
+    </div>
+    <button class="btn btn-secondary" onclick="show('screen-login')" data-i18n="landing_login">Inloggen</button>
+    <div class="donate-link"><a href="https://ko-fi.com/tim220172" target="_blank"><span data-i18n="landing_donate">&#9749; Vind je Weeklyst handig? Overweeg een donatie</span></a></div>
+    <div class="landing-footer">
+      <a class="footer-link" href="about.html" data-i18n="nav_about">Over</a>
+      <span class="footer-sep">&middot;</span>
+      <a class="footer-link" href="privacy.html" data-i18n="nav_privacy">Privacy</a>
+      <span class="footer-sep">&middot;</span>
+      <a class="footer-link" href="install.html" data-i18n="nav_install">Installeren</a>
+      <span class="footer-sep">&middot;</span>
+      <span class="footer-built" data-i18n="built_with">Met</a> <a href="https://claude.ai" target="_blank">Claude.ai</a></span>
+    </div>
+  </div>
+</div>
+
+<!-- 1. Registreren -->
+<div class="page" id="screen-register" style="display:none">
+  <div class="card">
+    <div class="logo"><div class="logo-icon"><img class="app-icon" src="" style="width:40px;height:40px;border-radius:10px;object-fit:cover;display:block"></div><div class="logo-name">Weeklyst</div></div>
+    <div class="steps"><div class="step-dot active" id="reg-dot-1"></div><div class="step-dot" id="reg-dot-2"></div><div class="step-dot" id="reg-dot-3"></div></div>
+    <div class="card-title" data-i18n="reg_title">Account aanmaken</div>
+    <div class="card-sub" data-i18n="reg_sub">Vul je gegevens in om te beginnen.</div>
+    <div class="msg" id="reg-msg"></div>
+    <div class="field">
+      <label class="f-label" for="reg-name" data-i18n="reg_name">Naam</label>
+      <input class="f-input" id="reg-name" type="text" placeholder="Tim" autocomplete="name">
+    </div>
+    <div class="field">
+      <label class="f-label" for="reg-email" data-i18n="reg_email">E-mailadres</label>
+      <input class="f-input" id="reg-email" type="email" data-i18n="reg_email_ph" placeholder="tim@voorbeeld.nl" autocomplete="email">
+    </div>
+    <!-- Auth methode keuze -->
+    <div class="field" id="reg-pass-field">
+      <label class="f-label" for="reg-pass" data-i18n="reg_pass">Wachtwoord</label>
+      <input class="f-input" id="reg-pass" data-i18n="reg_pass_ph" type="password" placeholder="minimaal 8 tekens" autocomplete="new-password" oninput="checkPwStrength(this.value)">
+      <div class="pw-strength" id="pw-strength"></div>
+    </div>
+    <div class="auth-choice">
+      <div class="choice-label" data-i18n="reg_method">Hoe wil je inloggen?</div>
+      <div class="choice-options">
+        <label class="choice-opt">
+          <input type="radio" name="auth_method" value="password" checked onchange="setAuthMethod('password')">
+          <span><strong><strong data-i18n="reg_method_pw">Wachtwoord</strong><br><small data-i18n="reg_method_pw_sub">Snel inloggen met je wachtwoord</small></span>
+        </label>
+        <label class="choice-opt">
+          <input type="radio" name="auth_method" value="magic" onchange="setAuthMethod('magic')">
+          <span><strong><strong data-i18n="reg_method_magic">E-mailcode</strong><br><small data-i18n="reg_method_magic_sub">Elke keer een code per e-mail</small></span>
+        </label>
+      </div>
+    </div>
+    <button class="btn btn-primary" id="reg-btn" onclick="doRegister()" data-i18n="reg_btn">Account aanmaken</button>
+    <div class="link-row" data-i18n="reg_have_account">Al een account? <button onclick="show('screen-login')">Inloggen</button></div>
+    <div class="link-row"><button onclick="show('screen-landing')">&#8592; Terug</button></div>
+  </div>
+</div>
+
+<!-- 2. E-mail verificatie -->
+<div class="page" id="screen-verify" style="display:none">
+  <div class="card">
+    <div class="logo"><div class="logo-icon"><img class="app-icon" src="" style="width:40px;height:40px;border-radius:10px;object-fit:cover;display:block"></div><div class="logo-name">Weeklyst</div></div>
+    <div class="steps"><div class="step-dot done" id="ver-dot-1"></div><div class="step-dot active" id="ver-dot-2"></div><div class="step-dot" id="ver-dot-3"></div></div>
+    <div class="card-title" data-i18n="verify_title">Check je e-mail</div>
+    <div class="card-sub">We hebben een 6-cijferige code gestuurd naar <strong id="verify-email-display"></strong>. Voer hem hieronder in.</div>
+    <div class="msg" id="ver-msg"></div>
+    <div class="field">
+      <label class="f-label" for="ver-code" data-i18n="verify_label">Verificatiecode</label>
+      <input class="f-input code-input" id="ver-code" type="tel" maxlength="6" placeholder="000000" autocomplete="one-time-code" oninput="this.value=this.value.replace(/\D/g,''); if(this.value.length===6) doVerify()">
+    </div>
+    <button class="btn btn-primary" id="ver-btn" onclick="doVerify()" data-i18n="verify_btn">Bevestigen</button>
+    <div class="link-row"><button onclick="doResendVerify()" data-i18n="verify_resend">Code opnieuw sturen</button></div>
+  </div>
+</div>
+
+<!-- 3. Gezin instellen -->
+<div class="page" id="screen-family" style="display:none">
+  <div class="card">
+    <div class="logo"><div class="logo-icon"><img class="app-icon" src="" style="width:40px;height:40px;border-radius:10px;object-fit:cover;display:block"></div><div class="logo-name">Weeklyst</div></div>
+    <div class="steps"><div class="step-dot done"></div><div class="step-dot done"></div><div class="step-dot active"></div></div>
+    <div class="card-title" data-i18n="family_title">Je gezin instellen</div>
+    <div class="card-sub" data-i18n="family_sub">Maak een nieuw gezin aan of doe mee met een bestaand gezin via een uitnodigingscode.</div>
+    <div class="msg" id="fam-msg"></div>
+    <div class="field">
+      <label class="f-label" for="fam-name" data-i18n="family_name">Naam van je gezin</label>
+      <input class="f-input" id="fam-name" type="text" placeholder="Familie De Vries">
+    </div>
+    <button class="btn btn-primary" id="fam-create-btn" onclick="doCreateFamily()" data-i18n="family_create">Gezin aanmaken</button>
+    <div class="divider" data-i18n="family_or">of</div>
+    <div class="field">
+      <label class="f-label" for="fam-code" data-i18n="family_code">Uitnodigingscode</label>
+      <input class="f-input code-input" id="fam-code" type="text" maxlength="6" placeholder="ABC123" autocomplete="off" style="font-size:22px;letter-spacing:6px" oninput="this.value=this.value.toUpperCase()">
+    </div>
+    <button class="btn btn-secondary" id="fam-join-btn" onclick="doJoinFamily()" data-i18n="family_join">Meedoen met gezin</button>
+  </div>
+</div>
+
+<!-- 4. Gezin aangemaakt — toon invite code -->
+<div class="page" id="screen-invite" style="display:none">
+  <div class="card">
+    <div class="logo"><div class="logo-icon"><img class="app-icon" src="" style="width:40px;height:40px;border-radius:10px;object-fit:cover;display:block"></div><div class="logo-name">Weeklyst</div></div>
+    <div class="card-title" data-i18n="invite_title">🎉 Gezin aangemaakt!</div>
+    <div class="card-sub" data-i18n="invite_sub">Deel de onderstaande code met je gezinsleden zodat zij kunnen meedoen.</div>
+    <div class="invite-box">
+      <div class="invite-code" id="invite-code-display"></div>
+      <div class="invite-sub" data-i18n="invite_code_sub">Uitnodigingscode — 6 tekens</div>
+    </div>
+    <button class="btn btn-primary" onclick="goToApp()" data-i18n="invite_btn">Naar de planner →</button>
+    <div class="link-row" style="margin-top:.75rem;font-size:12px;color:var(--faint)">Je kunt de code later ook terugvinden in de instellingen.</div>
+  </div>
+</div>
+
+<!-- 4b. Magic login — code invoeren -->
+<div class="page" id="screen-magic" style="display:none">
+  <div class="card">
+    <div class="logo"><div class="logo-icon"><img class="app-icon" src="" style="width:40px;height:40px;border-radius:10px;object-fit:cover;display:block"></div><div class="logo-name">Weeklyst</div></div>
+    <div class="card-title" data-i18n="magic_title">Inlogcode</div>
+    <div class="card-sub" data-i18n="magic_sub">We hebben een code gestuurd naar <strong id="magic-email-display"></strong>. Voer hem hieronder in.</div>
+    <div class="msg" id="magic-msg"></div>
+    <div class="field">
+      <label class="f-label" for="magic-code" data-i18n="magic_label">Inlogcode</label>
+      <input class="f-input code-input" id="magic-code" type="tel" maxlength="6" placeholder="000000" autocomplete="one-time-code" oninput="this.value=this.value.replace(/\D/g,''); if(this.value.length===6) doMagicVerify()">
+    </div>
+    <button class="btn btn-primary" id="magic-btn" onclick="doMagicVerify()" data-i18n="magic_btn">Inloggen</button>
+    <div class="link-row"><button onclick="doMagicResend()" data-i18n="magic_resend">Code opnieuw sturen</button></div>
+    <div class="link-row"><button onclick="show('screen-login')">&#8592; Terug</button></div>
+  </div>
+</div>
+
+<!-- 4c. Direct meedoen met gezinscode (geen email nodig) -->
+<div class="page" id="screen-join" style="display:none">
+  <div class="card">
+    <div class="logo"><div class="logo-icon"><img class="app-icon" src=""></div><div class="logo-name">Weeklyst</div></div>
+    <div class="card-title" data-i18n="join_title">Meedoen met een gezin</div>
+    <div class="card-sub" data-i18n="join_sub">Vul de gezinscode in die je hebt ontvangen, kies een naam en wachtwoord.</div>
+    <div class="msg" id="join-msg"></div>
+    <div class="field">
+      <label class="f-label" for="join-code" data-i18n="family_code">Gezinscode</label>
+      <input class="f-input code-input" id="join-code" type="text" maxlength="6" placeholder="ABC123" style="font-size:22px;letter-spacing:6px;text-align:center" oninput="this.value=this.value.toUpperCase()">
+    </div>
+    <div class="field">
+      <label class="f-label" for="join-name" data-i18n="reg_name">Jouw naam</label>
+      <input class="f-input" id="join-name" type="text" placeholder="bijv. Lisa" autocomplete="name">
+    </div>
+    <div class="field">
+      <label class="f-label" for="join-pass" data-i18n="reg_pass">Wachtwoord</label>
+      <input class="f-input" id="join-pass" type="password" placeholder="minimaal 6 tekens" autocomplete="new-password">
+    </div>
+    <button class="btn btn-primary" id="join-btn" onclick="doJoinRegister()">Meedoen</button>
+    <div class="link-row"><button onclick="show('screen-landing')" data-i18n="back">← Terug</button></div>
+  </div>
+</div>
+
+<!-- 5. Inloggen -->
+<div class="page" id="screen-login" style="display:none">
+  <div class="card">
+    <div class="logo"><div class="logo-icon"><img class="app-icon" src="" style="width:40px;height:40px;border-radius:10px;object-fit:cover;display:block"></div><div class="logo-name">Weeklyst</div></div>
+    <div class="card-title" data-i18n="login_title">Inloggen</div>
+    <div class="msg" id="login-msg"></div>
+
+    <!-- Tabs: Gezinslid / Beheerder -->
+    <div style="display:flex;gap:8px;margin-bottom:6px">
+      <button id="loginTabMember" class="btn btn-primary" style="flex:1;font-size:13px;padding:9px" onclick="setLoginTab('member')" data-i18n="login_tab_member">👨‍👩‍👧 Gezinslid</button>
+      <button id="loginTabOwner" class="btn btn-secondary" style="flex:1;font-size:13px;padding:9px" onclick="setLoginTab('owner')" data-i18n="login_tab_owner">👤 Beheerder</button>
+    </div>
+    <p id="loginTabHint" style="font-size:11px;color:var(--muted);margin-bottom:1rem;line-height:1.4" data-i18n="login_tab_hint_member">Meedoen via gezinscode? Kies Gezinslid en vul je naam en wachtwoord in.</p>
+
+    <!-- Gezinslid velden -->
+    <div id="loginMemberFields">
+      <div class="field">
+        <label class="f-label" for="login-code" data-i18n="family_code">Gezinscode</label>
+        <input class="f-input code-input" id="login-code" type="text" maxlength="6" placeholder="ABC123" style="font-size:20px;letter-spacing:5px;text-align:center" oninput="this.value=this.value.toUpperCase()">
+      </div>
+      <div class="field">
+        <label class="f-label" for="login-name" data-i18n="reg_name">Jouw naam</label>
+        <input class="f-input" id="login-name" type="text" placeholder="bijv. Lisa" autocomplete="name">
+      </div>
+    </div>
+
+    <!-- Beheerder velden -->
+    <div id="loginOwnerFields" style="display:none">
+      <div class="field">
+        <label class="f-label" for="login-email" data-i18n="login_email">E-mailadres</label>
+        <input class="f-input" id="login-email" type="email" placeholder="tim@voorbeeld.nl" autocomplete="email">
+      </div>
+    </div>
+
+    <div class="field">
+      <label class="f-label" for="login-pass" data-i18n="login_pass">Wachtwoord</label>
+      <input class="f-input" id="login-pass" type="password" placeholder="••••••••" autocomplete="current-password">
+    </div>
+
+    <button class="btn btn-primary" id="login-btn" onclick="doLogin()" data-i18n="login_btn">Inloggen</button>
+    <div class="link-row"><button onclick="showForgot()" data-i18n="login_forgot">Wachtwoord vergeten?</button></div>
+    <div class="link-row"><span data-i18n="login_no_account">Nog geen account?</span> <button onclick="show('screen-register')" data-i18n="login_signup">Aanmelden</button></div>
+    <div class="link-row"><button onclick="show('screen-landing')" data-i18n="back">← Terug</button></div>
+  </div>
+</div>
+
+<!-- 6. Wachtwoord vergeten -->
+<div class="page" id="screen-forgot" style="display:none">
+  <div class="card">
+    <div class="logo"><div class="logo-icon"><img class="app-icon" src="" style="width:40px;height:40px;border-radius:10px;object-fit:cover;display:block"></div><div class="logo-name">Weeklyst</div></div>
+    <div class="card-title" data-i18n="forgot_title">Wachtwoord vergeten</div>
+    <div class="card-sub" id="forgot-sub" data-i18n="forgot_sub">Vul je e-mailadres in en we sturen je een herstelcode.</div>
+    <div class="msg" id="forgot-msg"></div>
+
+    <!-- Gezinslid velden -->
+    <div id="forgotMemberFields">
+      <div class="field">
+        <label class="f-label" for="forgot-code" data-i18n="family_code">Gezinscode</label>
+        <input class="f-input code-input" id="forgot-code" type="text" maxlength="6" placeholder="ABC123" style="font-size:20px;letter-spacing:5px;text-align:center" oninput="this.value=this.value.toUpperCase()">
+      </div>
+      <div class="field">
+        <label class="f-label" for="forgot-name" data-i18n="reg_name">Jouw naam</label>
+        <input class="f-input" id="forgot-name" type="text" placeholder="bijv. Lisa">
+      </div>
+    </div>
+
+    <!-- Beheerder velden -->
+    <div id="forgotOwnerFields" style="display:none">
+      <div class="field">
+        <label class="f-label" for="forgot-email" data-i18n="login_email">E-mailadres</label>
+        <input class="f-input" id="forgot-email" type="email" placeholder="tim@voorbeeld.nl" autocomplete="email">
+      </div>
+    </div>
+
+    <button class="btn btn-primary" id="forgot-btn" onclick="doForgot()" data-i18n="forgot_btn">Code sturen</button>
+    <div class="link-row"><button onclick="show('screen-login')" data-i18n="forgot_back">← Terug naar inloggen</button></div>
+  </div>
+</div>
+
+<!-- 7.<!-- 7. Wachtwoord resetten -->
+<div class="page" id="screen-reset" style="display:none">
+  <div class="card">
+    <div class="logo"><div class="logo-icon"><img class="app-icon" src="" style="width:40px;height:40px;border-radius:10px;object-fit:cover;display:block"></div><div class="logo-name">Weeklyst</div></div>
+    <div class="card-title" data-i18n="reset_title">Nieuw wachtwoord</div>
+    <div class="card-sub" data-i18n="reset_sub">Voer de code in uit je e-mail en kies een nieuw wachtwoord.</div>
+    <div class="msg" id="reset-msg"></div>
+    <div class="field">
+      <label class="f-label" for="reset-code" data-i18n="reset_code">Herstelcode</label>
+      <input class="f-input code-input" id="reset-code" type="tel" maxlength="6" placeholder="000000" oninput="this.value=this.value.replace(/\D/g,'')">
+    </div>
+    <div class="field">
+      <label class="f-label" for="reset-pass" data-i18n="reset_pass">Nieuw wachtwoord</label>
+      <input class="f-input" id="reset-pass" type="password" placeholder="minimaal 8 tekens" autocomplete="new-password">
+    </div>
+    <button class="btn btn-primary" id="reset-btn" onclick="doReset()" data-i18n="reset_btn">Wachtwoord instellen</button>
+  </div>
+</div>
+
+<script>
+const API = 'api.php';
+// Jaar instellen op over pagina
+const aboutYear = document.getElementById('about-year');
+if (aboutYear) aboutYear.textContent = new Date().getFullYear();
+let currentEmail  = '';
+let pendingInviteCode = '';
+let selectedAuth  = 'password'; // 'password' of 'magic'
+
+function setAuthMethod(method) {
+  selectedAuth = method;
+  const passField = document.getElementById('reg-pass-field');
+  if (passField) passField.style.display = method === 'magic' ? 'none' : 'block';
+}
+
+// ── Schermen ──────────────────────────────────────────────
+function show(id) {
+  document.querySelectorAll('.page').forEach(p => p.style.display = 'none');
+  const el = document.getElementById(id);
+  if (el) { el.style.display = 'flex'; }
+}
+
+// ── API helper ────────────────────────────────────────────
+// ── Bot bescherming ──────────────────────────────────────
+let _formToken = null;
+let _formTs    = null;
+
+async function loadFormToken() {
+  try {
+    const r = await fetch('csrf.php?get_token', { cache: 'no-store' });
+    const d = await r.json();
+    _formToken = d.token;
+    _formTs    = d.ts;
+  } catch(e) {}
+}
+
+document.addEventListener('DOMContentLoaded', loadFormToken);
+
+async function api(action, data = {}) {
+  const botProtected = ['register','register_member','login','forgot_password','magic_send'];
+  const payload = { action, ...data };
+
+  if (botProtected.includes(action)) {
+    if (!_formToken) await loadFormToken();
+    payload._token = _formToken || '';
+    payload._ts    = _formTs    || 0;
+    payload._hp    = '';
+    loadFormToken(); // ververs voor volgende gebruik
+  }
+
+  const resp = await fetch(API, {
+    method:      'POST',
+    credentials: 'same-origin',
+    headers:     { 'Content-Type': 'application/json' },
+    body:        JSON.stringify(payload)
+  });
+  return resp.json();
+}
+
+// ── Berichten tonen ───────────────────────────────────────
+function msg(id, text, type = 'error') {
+  const el = document.getElementById(id);
+  if (!el) return;
+  el.textContent = text;
+  el.className = 'msg show ' + type;
+}
+function clearMsg(id) {
+  const el = document.getElementById(id);
+  if (el) { el.className = 'msg'; el.textContent = ''; }
+}
+
+// ── Knop laden ────────────────────────────────────────────
+function setLoading(btnId, loading, label) {
+  const btn = document.getElementById(btnId);
+  if (!btn) return;
+  btn.disabled = loading;
+  btn.innerHTML = loading ? '<span class="spinner"></span>Even geduld…' : label;
+}
+
+// ── Wachtwoord sterkte ────────────────────────────────────
+function checkPwStrength(val) {
+  const bar = document.getElementById('pw-strength');
+  if (!bar) return;
+  let score = 0;
+  if (val.length >= 8)  score++;
+  if (val.length >= 12) score++;
+  if (/[A-Z]/.test(val)) score++;
+  if (/[0-9]/.test(val)) score++;
+  if (/[^A-Za-z0-9]/.test(val)) score++;
+  const colors = ['#e53e3e','#e53e3e','#d97706','#2f855a','#2b6cb0'];
+  const widths  = ['20%','40%','60%','80%','100%'];
+  bar.style.width      = score ? widths[score-1] : '0';
+  bar.style.background = score ? colors[score-1] : 'transparent';
+}
+
+// ── Registreren ───────────────────────────────────────────
+async function doRegister() {
+  clearMsg('reg-msg');
+  const name  = document.getElementById('reg-name').value.trim();
+  const email = document.getElementById('reg-email').value.trim();
+  const pass  = document.getElementById('reg-pass').value;
+
+  if (!name)  { msg('reg-msg', t('err_name')); return; }
+  if (!email) { msg('reg-msg', t('err_email')); return; }
+  if (selectedAuth === 'password' && pass.length < 8) {
+    msg('reg-msg', t('err_pass_short')); return;
+  }
+
+  setLoading('reg-btn', true, 'Account aanmaken');
+  try {
+    const data = await api('register', { name, email, password: pass, auth_method: selectedAuth });
+    if (data.ok) {
+      currentEmail = email;
+      document.getElementById('verify-email-display').textContent = email;
+      show('screen-verify');
+    } else {
+      msg('reg-msg', data.error || t('err_connection'));
+    }
+  } catch(e) { msg('reg-msg', t('err_connection')); }
+  setLoading('reg-btn', false, 'Account aanmaken');
+}
+
+// ── E-mail verificatie ────────────────────────────────────
+async function doVerify() {
+  clearMsg('ver-msg');
+  const code = document.getElementById('ver-code').value.trim();
+  if (code.length !== 6) { msg('ver-msg', t('err_code')); return; }
+
+  setLoading('ver-btn', true, 'Bevestigen');
+  try {
+    const data = await api('verify_email', { email: currentEmail, code });
+    if (data.ok) {
+      if (pendingInviteCode) {
+        // Direct joinen met de code
+        const join = await api('join_family', { invite_code: pendingInviteCode });
+        pendingInviteCode = '';
+        if (join.ok) {
+          goToApp();
+        } else {
+          msg('ver-msg', join.error || t('err_invite_code'), 'error');
+          show('screen-family');
+        }
+      } else if (data.user) {
+        show('screen-family');
+      }
+    } else {
+      msg('ver-msg', data.error || 'Onjuiste code.');
+    }
+  } catch(e) { msg('ver-msg', t('err_connection')); }
+  setLoading('ver-btn', false, 'Bevestigen');
+}
+
+async function doResendVerify() {
+  clearMsg('ver-msg');
+  try {
+    await api('resend_verify', { email: currentEmail });
+    msg('ver-msg', t('msg_resend_ok'), 'success');
+  } catch(e) {}
+}
+
+// ── Gezin aanmaken ────────────────────────────────────────
+async function doCreateFamily() {
+  clearMsg('fam-msg');
+  const name = document.getElementById('fam-name').value.trim();
+  if (!name) { msg('fam-msg', t('err_family_name')); return; }
+
+  setLoading('fam-create-btn', true, 'Gezin aanmaken');
+  try {
+    const data = await api('create_family', { name });
+    if (data.ok) {
+      document.getElementById('invite-code-display').textContent = data.invite_code;
+      show('screen-invite');
+    } else {
+      msg('fam-msg', data.error || t('err_connection'));
+    }
+  } catch(e) { msg('fam-msg', t('err_connection')); }
+  setLoading('fam-create-btn', false, 'Gezin aanmaken');
+}
+
+// ── Gezin joinen ──────────────────────────────────────────
+async function doJoinFamily() {
+  clearMsg('fam-msg');
+  const code = document.getElementById('fam-code').value.trim().toUpperCase();
+  if (code.length !== 6) { msg('fam-msg', t('err_invite_code')); return; }
+
+  setLoading('fam-join-btn', true, 'Meedoen met gezin');
+  try {
+    const data = await api('join_family', { invite_code: code });
+    if (data.ok) {
+      goToApp();
+    } else {
+      msg('fam-msg', data.error || t('err_invite_code'));
+    }
+  } catch(e) { msg('fam-msg', t('err_connection')); }
+  setLoading('fam-join-btn', false, 'Meedoen met gezin');
+}
+
+function goToApp() {
+  window.location.href = 'app.html';
+}
+
+// ── Inloggen ──────────────────────────────────────────────
+async function doLogin() {
+  clearMsg('login-msg');
+  const pass = document.getElementById('login-pass').value;
+  if (!pass) { msg('login-msg', t('err_fill_pw_login')); return; }
+
+  setLoading('login-btn', true, t('login_btn'));
+  try {
+    let data;
+    if (currentLoginTab === 'member') {
+      const code = document.getElementById('login-code').value.trim().toUpperCase();
+      const name = document.getElementById('login-name').value.trim();
+      if (code.length !== 6) { msg('login-msg', t('err_invite_code')); setLoading('login-btn', false, t('login_btn')); return; }
+      if (!name) { msg('login-msg', t('err_name')); setLoading('login-btn', false, t('login_btn')); return; }
+      data = await api('login', { name, invite_code: code, password: pass });
+    } else {
+      const email = document.getElementById('login-email').value.trim();
+      if (!email) { msg('login-msg', t('err_email')); setLoading('login-btn', false, t('login_btn')); return; }
+      const check = await api('check_auth_method', { email });
+      if (check.auth_method === 'magic') {
+        currentEmail = email;
+        document.getElementById('magic-email-display').textContent = email;
+        await api('magic_send', { email });
+        setLoading('login-btn', false, t('login_btn'));
+        show('screen-magic'); return;
+      }
+      data = await api('login', { email, password: pass });
+    }
+    if (data.ok) {
+      if (!data.user.has_family) show('screen-family');
+      else goToApp();
+    } else if (data.step === 'verify_email') {
+      currentEmail = document.getElementById('login-email')?.value?.trim() || '';
+      document.getElementById('verify-email-display').textContent = currentEmail;
+      show('screen-verify');
+      msg('ver-msg', 'Bevestig eerst je e-mailadres.', 'info');
+    } else {
+      msg('login-msg', data.error || t('err_login'));
+    }
+  } catch(e) { msg('login-msg', t('err_connection')); }
+  setLoading('login-btn', false, t('login_btn'));
+}
+
+// ── Direct meedoen met code ──────────────────────────────
+async function doJoinRegister() {
+  clearMsg('join-msg');
+  const code = document.getElementById('join-code').value.trim().toUpperCase();
+  const name = document.getElementById('join-name').value.trim();
+  const pass = document.getElementById('join-pass').value;
+
+  if (code.length !== 6) { msg('join-msg', t('err_invite_code')); return; }
+  if (!name)             { msg('join-msg', t('err_name')); return; }
+  if (pass.length < 6)   { msg('join-msg', t('err_pass_short')); return; }
+
+  setLoading('join-btn', true, '...');
+  try {
+    const r = await api('register_member', { name, invite_code: code, password: pass });
+    if (r.ok) {
+      goToApp();
+    } else {
+      msg('join-msg', r.error || t('err_connection'));
+    }
+  } catch(e) { msg('join-msg', t('err_connection')); }
+  setLoading('join-btn', false, t('join_title'));
+}
+
+// ── Login tab beheer ─────────────────────────────────────
+let currentLoginTab = 'member';
+
+function showLoginAs(tab) {
+  show('screen-login');
+  setLoginTab(tab);
+}
+
+function setLoginTab(tab) {
+  currentLoginTab = tab;
+  const isMember = tab === 'member';
+  document.getElementById('loginMemberFields').style.display = isMember ? 'block' : 'none';
+  document.getElementById('loginOwnerFields').style.display  = isMember ? 'none'  : 'block';
+  const hint = document.getElementById('loginTabHint');
+  if (hint) {
+    hint.setAttribute('data-i18n', isMember ? 'login_tab_hint_member' : 'login_tab_hint_owner');
+    hint.textContent = t(isMember ? 'login_tab_hint_member' : 'login_tab_hint_owner');
+  }
+  document.getElementById('loginTabMember').className = 'btn ' + (isMember ? 'btn-primary' : 'btn-secondary') + ' ' + 'flex:1;font-size:13px;padding:9px';
+  document.getElementById('loginTabOwner').className  = 'btn ' + (isMember ? 'btn-secondary' : 'btn-primary') + ' ' + 'flex:1;font-size:13px;padding:9px';
+  // Stijl direct zetten
+  document.getElementById('loginTabMember').style.cssText = 'flex:1;font-size:13px;padding:9px;border:none;border-radius:9px;cursor:pointer;font-family:Outfit,sans-serif;font-weight:500;background:' + (isMember ? 'var(--accent)' : 'var(--bg)') + ';color:' + (isMember ? '#fff' : 'var(--muted)') + ';border:1px solid var(--border)';
+  document.getElementById('loginTabOwner').style.cssText  = 'flex:1;font-size:13px;padding:9px;border:none;border-radius:9px;cursor:pointer;font-family:Outfit,sans-serif;font-weight:500;background:' + (isMember ? 'var(--bg)' : 'var(--accent)') + ';color:' + (isMember ? 'var(--muted)' : '#fff') + ';border:1px solid var(--border)';
+}
+
+function showForgot() {
+  // Toon het juiste forgot scherm op basis van login tab
+  const isMember = currentLoginTab === 'member';
+  document.getElementById('forgotMemberFields').style.display = isMember ? 'block' : 'none';
+  document.getElementById('forgotOwnerFields').style.display  = isMember ? 'none'  : 'block';
+  document.getElementById('forgot-sub').dataset.i18n = isMember ? 'forgot_sub_member' : 'forgot_sub';
+  applyTranslations();
+  show('screen-forgot');
+}
+
+// ── Magic login ──────────────────────────────────────────
+async function doMagicLogin() {
+  // Wordt aangeroepen vanuit doLogin als auth_method === magic
+  // Zie de login flow hierboven
+}
+
+async function doMagicVerify() {
+  clearMsg('magic-msg');
+  const code = document.getElementById('magic-code').value.trim();
+  if (code.length !== 6) { msg('magic-msg', t('err_code')); return; }
+
+  setLoading('magic-btn', true, 'Inloggen');
+  try {
+    const data = await api('magic_verify', { email: currentEmail, code });
+    if (data.ok) {
+      if (!data.user.has_family) show('screen-family');
+      else goToApp();
+    } else {
+      msg('magic-msg', data.error || 'Onjuiste of verlopen code.');
+    }
+  } catch(e) { msg('magic-msg', t('err_connection')); }
+  setLoading('magic-btn', false, 'Inloggen');
+}
+
+async function doMagicResend() {
+  clearMsg('magic-msg');
+  try {
+    await api('magic_send', { email: currentEmail });
+    msg('magic-msg', t('msg_resend_ok'), 'success');
+  } catch(e) {}
+}
+
+// ── Wachtwoord vergeten ───────────────────────────────────
+async function doForgot() {
+  clearMsg('forgot-msg');
+  setLoading('forgot-btn', true, t('forgot_btn'));
+  try {
+    if (currentLoginTab === 'member') {
+      const code = document.getElementById('forgot-code').value.trim().toUpperCase();
+      const name = document.getElementById('forgot-name').value.trim();
+      if (code.length !== 6 || !name) { msg('forgot-msg', t('err_invite_code')); setLoading('forgot-btn', false, t('forgot_btn')); return; }
+      await api('forgot_password', { name, invite_code: code });
+      msg('forgot-msg', t('forgot_sent_member'), 'success');
+    } else {
+      const email = document.getElementById('forgot-email').value.trim();
+      if (!email) { msg('forgot-msg', t('err_email')); setLoading('forgot-btn', false, t('forgot_btn')); return; }
+      currentEmail = email;
+      await api('forgot_password', { email });
+      msg('forgot-msg', t('msg_forgot_sent'), 'success');
+      setTimeout(() => show('screen-reset'), 2000);
+    }
+  } catch(e) { msg('forgot-msg', t('err_connection')); }
+  setLoading('forgot-btn', false, t('forgot_btn'));
+}
+
+// ── Wachtwoord resetten ───────────────────────────────────
+async function doReset() {
+  clearMsg('reset-msg');
+  const codeEl   = document.getElementById('reset-code');
+  const code     = codeEl.value.trim();
+  const pass     = document.getElementById('reset-pass').value;
+  const memberId = codeEl.dataset.memberId;
+
+  if (pass.length < 6) { msg('reset-msg', t('err_pass_short')); return; }
+
+  setLoading('reset-btn', true, t('reset_btn'));
+  try {
+    let data;
+    if (memberId) {
+      data = await api('reset_password', { token: code, member_id: parseInt(memberId), password: pass });
+    } else {
+      if (code.length !== 6) { msg('reset-msg', t('err_code')); setLoading('reset-btn', false, t('reset_btn')); return; }
+      data = await api('reset_password', { email: currentEmail, code, password: pass });
+    }
+    if (data.ok) {
+      msg('reset-msg', t('msg_pw_reset_ok'), 'success');
+      setTimeout(() => show('screen-login'), 2000);
+    } else {
+      msg('reset-msg', data.error || t('err_connection'));
+    }
+  } catch(e) { msg('reset-msg', t('err_connection')); }
+  setLoading('reset-btn', false, t('reset_btn'));
+}
+
+// ── Enter toets support ───────────────────────────────────
+document.addEventListener('keydown', e => {
+  if (e.key !== 'Enter') return;
+  const visible = [...document.querySelectorAll('.page')].find(p => p.style.display !== 'none');
+  if (!visible) return;
+  const id = visible.id;
+  if (id === 'screen-register') doRegister();
+  if (id === 'screen-verify')   doVerify();
+  if (id === 'screen-login')    doLogin();
+  if (id === 'screen-forgot')   doForgot();
+  if (id === 'screen-reset')    doReset();
+});
+
+// ── Init: check of al ingelogd ────────────────────────────
+(async () => {
+  // Check URL params
+  const urlParams = new URLSearchParams(window.location.search);
+
+  // Uitnodigingslink: ?join=ABC123
+  const joinCode = urlParams.get('join');
+  if (joinCode) {
+    // Vul de code in en toon het join scherm direct
+    document.getElementById('join-code').value = joinCode.toUpperCase();
+    // Maak het code veld readonly zodat het niet per ongeluk wordt gewijzigd
+    document.getElementById('join-code').readOnly = true;
+    document.getElementById('join-code').style.opacity = '0.6';
+    show('screen-join');
+    // Verwijder de code uit de URL (netter)
+    window.history.replaceState({}, '', window.location.pathname);
+    return;
+  }
+
+  // Reset token (gezinslid via link van beheerder)
+  const resetToken = urlParams.get('reset_token');
+  const memberId   = urlParams.get('member_id');
+  if (resetToken && memberId) {
+    document.getElementById('reset-code').value = resetToken;
+    document.getElementById('reset-code').dataset.memberId = memberId;
+    document.getElementById('reset-code').readOnly = true;
+    document.getElementById('reset-sub').textContent = currentLang === 'en'
+      ? 'Enter a new password below.'
+      : 'Vul hieronder een nieuw wachtwoord in.';
+    show('screen-reset');
+    return;
+  }
+
+  try {
+    const resp = await fetch(API + '?action=me', { credentials: 'same-origin', cache: 'no-store' });
+    const data = await resp.json();
+    if (data.ok) {
+      if (!data.user.has_family) {
+        show('screen-family');
+      } else {
+        window.location.href = 'app.html';
+      }
+    }
+    // Anders landing tonen (staat al goed)
+  } catch(e) { /* toon landing */ }
+})();
+</script>
+<!-- Over Weeklyst -->
+<div class="page" id="about.html" style="display:none">
+  <div class="card about-card">
+    <div class="logo"><div class="logo-icon"><img class="app-icon" src=""></div><div class="logo-name">Weeklyst</div></div>
+
+    <div class="about-section">
+      <h2 class="about-title">Over Weeklyst</h2>
+      <p class="about-text">Weeklyst is ontstaan uit een simpele behoefte: een gedeelde boodschappenlijst voor het gezin, zonder gedoe. Geen reclame, geen tracking, geen overbodige functies &mdash; gewoon een overzichtelijke planner voor maaltijden en boodschappen die iedereen in het gezin kan bijhouden.</p>
+    </div>
+
+    <div class="about-section">
+      <h3 class="about-subtitle">&#128161; Het idee</h3>
+      <p class="about-text">Veel gezinnen plannen hun boodschappen nog via een gedeelde notitie op de telefoon. Dat werkt, maar het kan slimmer. Weeklyst biedt precies dat &mdash; niet meer, niet minder.</p>
+    </div>
+
+    <div class="about-section">
+      <h3 class="about-subtitle">&#129302; Gebouwd samen met Claude.ai</h3>
+      <p class="about-text">Weeklyst is ontwikkeld in samenwerking met <a href="https://claude.ai" target="_blank" class="about-link">Claude.ai</a>, de AI-assistent van Anthropic. Het idee, de vormgeving en de functionaliteit zijn bedacht door een mens &mdash; Claude heeft geholpen om dat idee snel en vakkundig in code om te zetten. Een mooie samenwerking tussen menselijke creativiteit en AI.</p>
+    </div>
+
+    <div class="about-section">
+      <h3 class="about-subtitle">&#128275; Privacy eerst</h3>
+      <p class="about-text">Jouw data blijft van jou. Geen advertenties, geen verkoop van gegevens, geen tracking. Weeklyst slaat alleen op wat nodig is om de app te laten werken.</p>
+    </div>
+
+    <div class="about-section about-donate">
+      <h3 class="about-subtitle">&#9749; Donatie</h3>
+      <p class="about-text">Weeklyst is gratis te gebruiken. Vind je het handig? Een kleine donatie helpt om de app draaiende te houden en verder te ontwikkelen.</p>
+      <a href="https://ko-fi.com/tim220172" target="_blank" class="btn btn-primary" style="display:block;text-align:center;text-decoration:none;margin-top:.75rem">&#9749; Doneer via Ko-fi</a>
+    </div>
+
+    <div class="about-version">Versie 1.0 &mdash; <span id="about-year"></span></div>
+
+    <button class="btn btn-secondary" onclick="show('screen-landing')" style="margin-top:1rem">&#8592; Terug</button>
+  </div>
+</div>
+
+</body>
+</html>
