@@ -51,7 +51,7 @@
 ### Stap 2 — Bestanden uploaden
 
 Upload alle bestanden uit de map `app/` naar de **root van je webhosting** (`public_html` of `www`):
-
+Verander de bestandsnaam `htaccess.txt` naar `.htaccess`
 ```
 app/
 ├── index.html          ← Landingspagina + inlogschermen
