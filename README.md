@@ -54,7 +54,7 @@ A free to use webapp with a shopping list and diner weekplanner. Ist's a The fam
 ### Step 2 — Upload files
 
 Upload all files from the `app/` folder to the **root of your web hosting** (`public_html` or `www`):
-
+change the name of the file `htaccess.txt` to `.htaccess`
 ```
 app/
 ├── index.html          ← Landing page + login screens
