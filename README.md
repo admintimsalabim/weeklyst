@@ -297,4 +297,9 @@ The app administrator will receive an email and will delete the family and all d
 
 ---
 
+## Donate
+
+This application is free to use. When you think this will come in handy, a small donation will help to fix issues and optimize this application.
+https://ko-fi.com/tim220172
+
 *Weeklyst was built in collaboration with Claude.ai — https://claude.ai*
